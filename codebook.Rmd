@@ -2,7 +2,7 @@
 title: "Codebook"
 author: "Manojkumar Parmar"
 date: "25/09/2015"
-output: pdf_document
+output: html_document
 ---
 ========
 Codebook was generated on `r as.character(Sys.time())` during the same process that generated the dataset.

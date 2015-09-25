@@ -2,10 +2,10 @@
 title: "Codebook"
 author: "Manojkumar Parmar"
 date: "25/09/2015"
-output: pdf_document
+output: html_document
 ---
 ========
-Codebook was generated on 2015-09-25 09:20:39 during the same process that generated the dataset.
+Codebook was generated on 2015-09-25 09:41:15 during the same process that generated the dataset.
 
 ##Variable and descriptions
 ###Subject
