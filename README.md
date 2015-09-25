@@ -23,13 +23,13 @@ You should create one R script called run_analysis.R that does the following.
 ##Tools used to produce this project
 - This project is built by `knirt` package instllled on RStudio with RMD (R Markdown) format.
 
-- The `codebook.md` files will be  automatically  produced by `Assignment_script.R`
+- The `codebook.md` files will be  automatically  produced by `run_analysis.R`
 
 ##Steps to produce this project
 
-- Plsease see the details in `Assignment_script.R` and `codebook.md`.
+- Plsease see the details in `run_analysis.R` and `codebook.md`.
 
-- `Assignment_script.R` file contains the steps to produce this project.
+- `run_analysis.R` file contains the steps to produce this project.
 
 - The final tidy data is in `tidydataset.txt`. It can be loaded by `Data<-read.table("tidydataset.txt", sep=" ", head=TRUE)`
 
@@ -37,4 +37,24 @@ You should create one R script called run_analysis.R that does the following.
 
 ##Steps to reproduce this project
 
--  Open Rstudio to open R file  `Assignment_script.R` to build the Project. then `codebook.md` and `tidydataset.txt` will be produced.
+-  Open Rstudio to open R file  `run_analysis.R` to build the Project. then `codebook.md` and `tidydataset.txt` will be produced.
+
+##Steps used for analysis
+- Step00.0 : setting up environment
+- Step01.0 : Download data and put it in folder if it is not there
+- Step02.0 : Unzip file
+- Step03.0 : get the list of files from unzipped version to process it further.
+- Step04.0 : Start reading data
+- Step04.1 : read `y_test.txt` and `y_train.txt` 
+- Step04.2 : read `subject_train.txt` and read `subject_test.txt`
+- Step04.3 : read `x_test.txt` and `x_train.txt`
+- Step05.0 : Merge training and test data
+- Step06.0 : naming of varibales by reading from `feature.txt`
+- Step07.0 : Combine all data to make final dataframe
+- Step08.0 : extract mean and standard deviation for each measurement from final data
+- Step09.0 : taking subset of data based on extraction labels
+- Step10.0 : make variables more discriptive
+- Step10.1 : replace activity variable number with discription from `activity_labels.txt`
+- Step10.2 : expand & correct name of variables using regex
+- Step11.0 : Create final tiday dataset by taking average for each activity for each subject for all variables
+- Step12.0 : build codebook
